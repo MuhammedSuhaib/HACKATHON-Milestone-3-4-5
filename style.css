@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.dark {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+[contenteditable="true"] {
+    border: 1px dashed #ccc;
+    padding: 0.5rem;
+}
+
+.upload-btn {
+    margin: 1rem 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+header div h1 {
+    font-weight: 700;
+    font-size: xx-large;
+    color: #4f46e5;
+    text-align: center;
+}
+
+header p {
+    font-size: 1.875rem;
+    text-align: center;
+
+}
+
+.profile-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.profile-section img {
+    border-radius: 9999px;
+}
+
+.about-me, .contact-info, .skills-education section, .experience {
+    border-radius: 0.5rem;
+    background-color: #60a5fa;
+    padding: 1.25rem;
+    margin: 1.75rem;
+}
+
+.about-me h2, .contact-info h2, .skills-education h2, .experience h2 {
+    font-size: 2.5rem;
+    color: #e0f2fe;
+    font-weight: 800;
+    margin: 1.25rem 0;
+}
+
+.skills-education {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.75rem;
+}
+
+.skills-education section {
+    background-color: #60a5fa;
+    padding: 1rem;
+    width: 100%;
+    margin-right: 2.25rem;
+}
+
+.skills-education section:last-child {
+    margin-right: 0;
+}
+
+footer {
+    text-align: center;
+    font-size: 1.125rem;
+}
+
+button {
+    position: fixed;
+    top: 1rem;
+}
+
+button:first-of-type {
+    right: 1rem;
+}
+
+button:last-of-type {
+    right: 6rem;
+}
+@media print {
+    /* Hide specific elements during printing */
+    .upload-btn, 
+    button {
+        display: none;
+    }
+}
