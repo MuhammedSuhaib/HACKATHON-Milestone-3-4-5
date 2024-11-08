@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family:  Georgia, serif;
     font-size: x-large;
     background-color: #eaf4f5;
@@ -93,10 +93,145 @@ button:first-of-type {
 button:last-of-type {
     right: 6rem;
 }
+
+
+/* Base styles */
+body {
+    font-family: Georgia, serif;
+    font-size: x-large;
+    background-color: #eaf4f5;
+    margin: 0;
+    padding: 0;
+}
+
+.dark {
+    background-color: #240e0e;
+    color: #f0f0f0;
+}
+
+.upload-btn {
+    margin: 1rem 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center; /* Center-align for better mobile look */
+}
+
+header div h1 {
+    font-weight: 700;
+    font-size: 6vw;
+    color: #3c36af;
+    text-align: center;
+    
+}
+
+header p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column; /* Stack items on small screens */
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.profile-section img {
+    border-radius: 9999px;
+    max-width: 100%; /* Ensure image doesn't overflow on small screens */
+}
+
+/* Sections */
+.about-me, .contact-info, .skills-education section, .experience {
+    border-radius: 0.5rem;
+    background-color: #5a9df0;
+    padding: 1.25rem;
+    margin: 1.75rem;
+    box-shadow: 0px 4px 10px rgba(128, 0, 128, 0.5);
+}
+
+.about-me h2, .contact-info h2, .skills-education h2, .experience h2 {
+    font-size: 2.5rem;
+    color: #e0f2fe;
+    font-weight: 800;
+    margin: 1.25rem 0;
+}
+
+/* Skills and Education section */
+.skills-education {
+    display: flex;
+    flex-direction: row; /* Side-by-side on larger screens */
+    justify-content: space-between;
+    gap: 1rem; /* Add spacing between sections */
+    margin: 1.75rem;
+}
+
+.skills-education section {
+    background-color: #5a9df0;
+    padding: 1rem;
+    flex: 1; /* Make each section take equal space */
+}
+
+footer {
+    text-align: center;
+    font-size: 1.125rem;
+}
+
+/* Buttons */
+button {
+    position: fixed;
+    top: 1rem;
+}
+
+button:first-of-type {
+    right: 1rem;
+}
+
+button:last-of-type {
+    right: 6rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: large;
+    }
+
+    header div h1 {
+        font-size: 2rem; /* Smaller font size on mobile */
+    }
+
+    header p {
+        font-size: 1.25rem;
+    }
+
+    .skills-education {
+        flex-direction: column; /* Stack skills and education vertically */
+    }
+
+    .about-me, .contact-info, .skills-education section, .experience {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    button {
+        position: static;
+        margin-top: 1rem;
+        display: block;
+    }
+}
+
+/* Print */
 @media print {
     /* Hide specific elements during printing */
     .upload-btn, 
     button {
         display: none;
-    }
+    }  
 }
