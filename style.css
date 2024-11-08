@@ -1,9 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family:  Georgia, serif;
+    font-size: x-large;
+    background-color: #eaf4f5;
 }
 
 .dark {
-    background-color: #333;
+    background-color: #240e0e;
     color: #f0f0f0;
 }
 
@@ -22,7 +24,7 @@ header {
 header div h1 {
     font-weight: 700;
     font-size: xx-large;
-    color: #4f46e5;
+    color: #3c36af;
     text-align: center;
 }
 
